@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo Iqbal Izza Addaviqi</title>
+    <title>Portofolio Iqbal I.A</title>
+    <link rel="icon" href="assets/logo-favicon.ico" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,15 +22,26 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- pop up -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link CSS AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">
-          <i class="bi bi-android"></i>Portofolio</a
-        >
+          <i class="bi bi-android"></i> Portofolio
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,7 +51,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -50,35 +62,39 @@
               <a class="nav-link fw-bold" href="#galeri">Projek</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link fw-bold" href="#pengalaman">Pengalaman</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link fw-bold" href="#testimoni">Testimoni</a>
             </li>
           </ul>
-          <a href="#kontak" class="btn btn-success rounded-1"
-            ><i class="fw-bold">Kontak</i>
+          <a href="#kontak" class="btn btn-success rounded-1">
+            <i class="fw-bold">Kontak</i>
           </a>
         </div>
       </div>
     </nav>
     <div class="container mt-5">
-      <header class="row">
+      <header id="header" class="row">
         <div
           class="col-md-6 col-12 d-flex d-md-none justify-content-center align-items-center mb-4"
         >
           <img
-            src="assets/img-header1.png"
+            src="assets/img-header.png"
             alt="header"
             class="img-header-cstm"
           />
         </div>
         <div
           class="col-md-6 col-12 d-flex justify-content-start align-items-center"
+          data-aos="fade-down"
         >
           <div class="">
             <div style="height: 50px"></div>
-            <p class="fw-bold fs-5">Portofolio Iqbal Izza Addaviqi</p>
+            <p class="fw-bold fs-3">Iqbal Izza Addaviqi</p>
             <div class="line-md-cstm"></div>
-            <h1 id="beranda" class="display-3 fw-bold text-success">
-              Selamat Datang
+            <h1 id="beranda" class="display-4 fw-bold text-success">
+              Web Developer
             </h1>
             <p class="fw-bold text-secondary" style="text-align: justify">
               Lulusan dari program studi S1-Teknik Informatika Universitas
@@ -89,23 +105,142 @@
               baik dalam pekerjaan profesional maupun kegiatan sosial.
             </p>
             <div>
-              <a href="#kontak" class="btn btn-outline-success rounded-1"
-                >Kontak</a
+              <a
+                href="https://www.linkedin.com/in/iqbal-izza-addaviqi/"
+                target="_blank"
+                class="btn btn-outline-info fw-bold rounded-1"
+                ><i class="bi bi-linkedin"></i>&nbsp;LinkedIn</a
               >
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-12 d-none d-md-flex justify-content-end">
+        <div class="col-md-6 col-12 d-none d-md-flex justify-content-end mt-5">
           <img
-            src="assets/img-header1.png"
+            src="assets/img-header.png"
             alt="header"
             class="img-header-cstm"
           />
         </div>
-        <div style="height: 200px"></div>
+        <div style="height: 50px"></div>
       </header>
+      <section class="row" data-aos="fade-down">
+        <div class="mt-2">
+          <h2 class="display-6 fw-bold text-secondary">
+            Indikator Kinerja Keterampilan
+          </h2>
 
-      <section class="row">
+          <div class="mb-3">
+            <label for="html" class="fw-bold"
+              >Front-End Website<span class="float-right"
+                >&nbsp;90%</span
+              ></label
+            >
+            <div class="progress">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="css" class="fw-bold"
+              >WordPress<span class="float-right">&nbsp;80%</span></label
+            >
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 80%"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="javascript" class="fw-bold"
+              >Desain UI/UX Website<span class="float-right"
+                >&nbsp;75%</span
+              ></label
+            >
+            <div class="progress">
+              <div
+                class="progress-bar bg-warning"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="php" class="fw-bold"
+              >Laravel Website<span class="float-right">&nbsp;70%</span></label
+            >
+            <div class="progress">
+              <div
+                class="progress-bar bg-danger"
+                role="progressbar"
+                style="width: 70%"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <p>
+            Indikator Kinerja Keterampilan ini menyajikan gambaran komprehensif
+            mengenai kemampuan yang dimiliki serta pencapaian yang telah diraih.
+            Dengan memahami indikator tersebut, Untuk melihat detail lebih
+            lanjut tentang pengalaman dan kualifikasi saya,
+            <a class="font-link-cstm" href="#" id="pdfLink">lihat CV.</a>
+          </p>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="pdfModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="pdfModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="pdfModalLabel">
+                  File terkait
+                </h5>
+                <span class="clickable" id="closeIcon" aria-hidden="true"
+                  >&times;</span
+                >
+                <!-- Ikon X yang dapat diklik -->
+              </div>
+              <div class="modal-body">
+                <iframe
+                  src="path/CV_iqbal.pdf"
+                  width="100%"
+                  height="500px"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="height: 200px"></div>
+      </section>
+      <section class="row" data-aos="fade-up">
         <div class="text-center">
           <div>
             <h1 id="galeri" class="display-5 fw-bold font-color-cstm">
@@ -196,23 +331,35 @@
             </div>
           </div>
         </div>
+        <a
+          href="https://www.canva.com/design/DAFiw_Ii8K8/8DLT3iNc0twlf408qFEeqg/edit"
+          target="_blank"
+          class="btn btn-success rounded-1 mt-3 p-2 col-md-3 col-6 d-flex justify-content-center align-items-center mx-auto"
+          ><i class="fw-bold">Lihat Selengkapnya</i>
+        </a>
         <div style="height: 200px"></div>
       </section>
-      <section class="row">
+      <section class="row" data-aos="fade-up">
         <div
           class="col-md-10 col-12 d-flex justify-content-start align-items-center"
         >
           <div class="">
             <div class="line-md-cstm my-3 mt-4"></div>
-            <h1 id="testimoni" class="display-5 fw-bold">
-              Umpan balik pelanggan
+            <h1 id="pengalaman" class="display-5 fw-bold">
+              <!-- Umpan balik pelanggan -->
+              Beberapa pengalaman terkait
             </h1>
             <p class="fs-6 my-4">
-              “Saya berkomitmen untuk memberikan pengalaman terbaik, dan masukan
-              Anda adalah langkah penting dalam proses perbaikan.”
+              <!-- “Saya berkomitmen untuk memberikan pengalaman terbaik, dan masukan
+              Anda adalah langkah penting dalam proses perbaikan.” -->
+              "Sebagai seorang web developer dengan pengalaman yang luas dalam
+              mengelola proyek teknologi, saya terlibat langsung dari tahap
+              perencanaan hingga implementasi. Mulai dari desain antarmuka
+              hingga fungsionalitas teknis. Pendekatan saya selalu berorientasi
+              pada solusi yang efisien dan sesuai dengan kebutuhan."
             </p>
             <a
-              href="https://www.linkedin.com/in/iqbal-izza-addaviqi/"
+              href="https://www.instagram.com/iqbalii__/"
               target="_blank"
               class="font-link-cstm"
             >
@@ -221,214 +368,343 @@
             </a>
           </div>
         </div>
+        <div style="height: 50px"></div>
+        <div id="cardSlider" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 col-sm-6 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="fs-5 fw-bold text-success">
+                        METABHARATA Official
+                      </p>
+                      <p
+                        class="fs-6 text-secondary fst-italic"
+                        style="margin-bottom: 0"
+                      >
+                        Chief Technology Officer
+                      </p>
+                      <p class="fw-bold">
+                        Mengoordinasikan tim desain dan pemrograman dengan
+                        memastikan setiap anggota berkontribusi secara optimal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="fs-5 fw-bold text-success">PT Otak Kanan</p>
+                      <p
+                        class="fs-6 text-secondary fst-italic"
+                        style="margin-bottom: 0"
+                      >
+                        Front-End Web Developer (intern)
+                      </p>
+                      <p class="fw-bold">
+                        Berperan dalam pengembangan platform E-Course,
+                        menciptakan antarmuka pengguna (UI) yang menarik dan
+                        fungsional.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="fs-5 fw-bold text-success">
+                        Dicoding Indonesia
+                      </p>
+                      <p
+                        class="fs-6 text-secondary fst-italic"
+                        style="margin-bottom: 0"
+                      >
+                        study independent (MBKM)
+                      </p>
+                      <p class="fw-bold">
+                        Pelatihan Front-End web dan Back-End pada Program SIB
+                        Dicoding X Kampus Merdeka Angkatan 4.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 (Optional: if you want more slides) -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 col-sm-6 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="fs-5 fw-bold text-success">
+                        KMI Expo Kemahasiswaan Dikti Kemendikbudristek
+                      </p>
+                      <p
+                        class="fs-6 text-secondary fst-italic"
+                        style="margin-bottom: 0"
+                      >
+                        Juara 2 Kategori bisnis digital
+                      </p>
+                      <p class="fw-bold">
+                        sebagai prestasi atas inovasi dan kualitas ide yang
+                        diusulkan dalam kompetisi tersebut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="fs-5 fw-bold text-success">
+                        KMI Expo Kemahasiswaan Dikti Kemendikbudristek
+                      </p>
+                      <p
+                        class="fs-6 text-secondary fst-italic"
+                        style="margin-bottom: 0"
+                      >
+                        Juara 2 Kategori bisnis digital
+                      </p>
+                      <p class="fw-bold">
+                        sebagai prestasi atas inovasi dan kualitas ide yang
+                        diusulkan dalam kompetisi tersebut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="fs-5 fw-bold text-success">
+                        Lembaga Sertifikasi Profesi
+                      </p>
+                      <p
+                        class="fs-6 text-secondary fst-italic"
+                        style="margin-bottom: 0"
+                      >
+                        Junior Computer Operator
+                      </p>
+                      <p class="fw-bold">
+                        Kompetensi dan keterampilan dalam bidang pengoperasian
+                        komputer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#cardSlider"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#cardSlider"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div style="height: 200px"></div>
       </section>
-      <section class="row mt-5 g-1">
-        <div class="col-md-4 col-12 mt-3 mt-md-0">
-          <div class="card p-5">
-            <div
-              class="icon-star-cstm d-flex justify-content-center align-items-center"
-            >
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-            </div>
-            <p class="text-secondary fs-6 text-center">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="row align-items-center">
-              <div
-                class="col-md-6 d-flex justify-content-center justify-content-md-end"
-              >
-                <img
-                  src="assets/img-testimoni.png"
-                  alt=""
-                  class="img-customer-cstm rounded-circle"
-                />
-              </div>
-              <div
-                class="col-md-6 d-flex flex-column justify-content-center text-center text-md-start"
-              >
-                <p
-                  class="font-color-cstm fs-6 fw-bold"
-                  style="margin-bottom: 0"
-                >
-                  Iqbal
-                </p>
-                <p class="fs-6 fw-bold">Designer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 mt-3 mt-md-0">
-          <div class="card p-5">
-            <div
-              class="icon-star-cstm d-flex justify-content-center align-items-center"
-            >
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-            </div>
-            <p class="text-secondary fs-6 text-center">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="row align-items-center">
-              <div
-                class="col-md-6 d-flex justify-content-center justify-content-md-end"
-              >
-                <img
-                  src="assets/img-testimoni.png"
-                  alt=""
-                  class="img-customer-cstm rounded-circle"
-                />
-              </div>
-              <div
-                class="col-md-6 d-flex flex-column justify-content-center text-center text-md-start"
-              >
-                <p
-                  class="font-color-cstm fs-6 fw-bold"
-                  style="margin-bottom: 0"
-                >
-                  Iqbal
-                </p>
-                <p class="fs-6 fw-bold">Designer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 mt-3 mt-md-0">
-          <div class="card p-5">
-            <div
-              class="icon-star-cstm d-flex justify-content-center align-items-center"
-            >
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-            </div>
-            <p class="text-secondary fs-6 text-center">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="row align-items-center">
-              <div
-                class="col-md-6 d-flex justify-content-center justify-content-md-end"
-              >
-                <img
-                  src="assets/img-testimoni.png"
-                  alt=""
-                  class="img-customer-cstm rounded-circle"
-                />
-              </div>
-              <div
-                class="col-md-6 d-flex flex-column justify-content-center text-center text-md-start"
-              >
-                <p
-                  class="font-color-cstm fs-6 fw-bold"
-                  style="margin-bottom: 0"
-                >
-                  Iqbal
-                </p>
-                <p class="fs-6 fw-bold">Designer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="height: 250px"></div>
-      </section>
-      <section class="row">
+      <section class="row" data-aos="fade-down">
         <div class="text-center">
           <div>
-            <h1 id="kontak" class="display-5 fw-bold font-color-cstm">
+            <h1 id="testimoni" class="display-5 fw-bold font-color-cstm">
               Ada pertanyaan?
             </h1>
-            <p class="fs-6 col-md-10 col-12 mx-auto text-secondary">
-              Jangan ragu untuk menghubungi kapan saja. Berikan masukkan yang
-              Anda miliki, baik mengenai produk, layanan, atau informasi
-              lainnya.
+            <p class="fs-6 col-md-10 col-12 mx-auto fw-bold">
+              Saya dengan senang hati menerima pertanyaan dan masukan Anda kapan
+              saja! Bagikan pendapat Anda tentang produk, layanan, atau
+              informasi yang kami sediakan. Umpan balik Anda sangat berharga
+              untuk terus meningkatkan kualitas dan memberikan yang terbaik,
+              <a
+                href="https://forms.gle/ez7ASZVMyL7YzUti6"
+                target="_blank"
+                class="font-link-cstm"
+                >klik di sini.</a
+              >
             </p>
           </div>
         </div>
       </section>
       <section class="row">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nama</label>
-          <input
-            type="name"
-            class="form-control"
-            id="exampleFormControlInput1"
-          />
+        <div class="col-md-4 col-6 mt-md-0">
+          <div class="card p-2">
+            <div
+              class="icon-star-cstm d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary fs-6 text-center">
+              "Saya sangat mengapresiasi cara Anda menyelesaikan proyek ini
+              tepat waktu dan dengan hasil yang sesuai fungsional."
+            </p>
+            <div class="row align-items-center">
+              <div
+                class="col-md-12 d-flex flex-column justify-content-start text-center text-md-start"
+              >
+                <p class="font-color-cstm fs-6 fw-bold mb-1">
+                  Abdi Prayoga, S.Pd
+                </p>
+                <p class="fs-6 fw-bold">Guru</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Subjek</label
-          >
-          <input
-            type="subject"
-            class="form-control"
-            id="exampleFormControlInput1"
-          />
+
+        <div class="col-md-4 col-6 mt-md-0">
+          <div class="card p-2">
+            <div
+              class="icon-star-cstm d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary fs-6 text-center">
+              "Banyak fitur menarik dalam proyek web ini, mungkin Anda bisa
+              mencoba optimisasi gambar atau minifikasi file untuk mempercepat
+              loading."
+            </p>
+            <div class="row align-items-center">
+              <div
+                class="col-md-12 d-flex flex-column justify-content-start text-center text-md-start"
+              >
+                <p class="font-color-cstm fs-6 fw-bold mb-1">
+                  Cahyo Febri Wijaksono, S.Pd
+                </p>
+                <p class="fs-6 fw-bold">Researcher</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Ketik pesan</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
+
+        <div class="col-md-4 col-6 mt-md-0">
+          <div class="card p-2">
+            <div
+              class="icon-star-cstm d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary fs-6 text-center">
+              "Desain website yang dikembangkan sangat menarik dan navigasi yang
+              dibuat terasa sangat ramah pengguna."
+            </p>
+            <div class="row align-items-center">
+              <div
+                class="col-md-12 d-flex flex-column justify-content-start text-center text-md-start"
+              >
+                <p class="font-color-cstm fs-6 fw-bold mb-1">
+                  Tanti Ayu Kurniandari, S.Pd
+                </p>
+                <p class="fs-6 fw-bold">Mahasiswi S2</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-success my-3">Kirim</button>
-        </div>
+
+        <div style="height: 100px"></div>
       </section>
     </div>
     <footer class="text-white pt-4">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <p class="fs-6">
+            <div class="line-md-cstm my-3 mt-4"></div>
+            <p class="fs-6" data-aos="fade-up">
               Mari terhubung bersama saya dan jangan ragu untuk menjalin
               komunikasi. Saya selalu terbuka untuk kolaborasi, diskusi, atau
               pertanyaan. Hubungi saya melalui platform yang Anda pilih!
             </p>
           </div>
-          <div class="d-flex justify-content-start">
+          <div id="kontak" class="d-flex justify-content-start">
             <a
               href="https://www.instagram.com/iqbalii__/"
               target="_blank"
               class="text-white me-3"
             >
-              <i class="bi bi-instagram"></i>
+              <i class="bi bi-instagram fs-3"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/iqbal-izza-addaviqi/"
               target="_blank"
               class="text-white me-3"
             >
-              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-linkedin fs-3"></i>
             </a>
-            <a href="#" target="_blank" class="text-white">
-              <i class="bi bi-whatsapp"></i>
+            <a
+              href="https://wa.me/6283146142289"
+              target="_blank"
+              class="text-white"
+            >
+              <i class="bi bi-whatsapp fs-3"></i>
             </a>
           </div>
         </div>
         <div class="text-center py-3">
-          <p>© 2024 Portofolio Iqbal. Semua hak dilindungi.</p>
+          <p class="font-color-cstm">
+            © 2024 Iqbal Izza A. Semua hak dilindungi.
+          </p>
         </div>
       </div>
     </footer>
+    <script>
+      // Mendapatkan navbar
+      const navbar = document.querySelector(".navbar");
+
+      // Menambahkan event listener saat scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled"); // Tambahkan kelas saat scroll
+        } else {
+          navbar.classList.remove("scrolled"); // Hapus kelas saat kembali ke atas
+        }
+      });
+    </script>
+    <!-- Link JS AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(); // Inisialisasi AOS
+    </script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <!-- pop up pdf -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Menampilkan modal saat mengklik tautan
+      $("#pdfLink").click(function (e) {
+        e.preventDefault(); // Mencegah default action dari anchor
+        $("#pdfModal").modal("show"); // Menampilkan modal
+      });
+
+      // Menutup modal saat mengklik ikon X
+      $("#closeIcon").click(function () {
+        $("#pdfModal").modal("hide"); // Menutup modal
+      });
+    });
+  </script>
 </html>
