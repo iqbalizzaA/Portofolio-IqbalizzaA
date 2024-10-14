@@ -27,7 +27,6 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <!-- Link CSS AOS -->
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
@@ -37,7 +36,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">
           <i class="bi bi-android"></i> Portofolio
@@ -209,7 +208,7 @@
 
         <!-- Modal -->
         <div
-          class="modal fade"
+          class="modal"
           id="pdfModal"
           tabindex="-1"
           role="dialog"
@@ -219,9 +218,7 @@
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title fw-bold" id="pdfModalLabel">
-                  File terkait
-                </h5>
+                <h5 class="modal-title" id="pdfModalLabel">Lihat File PDF</h5>
                 <span class="clickable" id="closeIcon" aria-hidden="true"
                   >&times;</span
                 >
@@ -231,13 +228,14 @@
                 <iframe
                   src="path/CV_iqbal.pdf"
                   width="100%"
-                  height="500px"
+                  height="400px"
                   allowfullscreen
                 ></iframe>
               </div>
             </div>
           </div>
         </div>
+
         <div style="height: 200px"></div>
       </section>
       <section class="row" data-aos="fade-up">
@@ -670,41 +668,29 @@
         </div>
       </div>
     </footer>
-    <script>
-      // Mendapatkan navbar
-      const navbar = document.querySelector(".navbar");
-
-      // Menambahkan event listener saat scroll
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-          navbar.classList.add("scrolled"); // Tambahkan kelas saat scroll
-        } else {
-          navbar.classList.remove("scrolled"); // Hapus kelas saat kembali ke atas
-        }
-      });
-    </script>
-    <!-- Link JS AOS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init(); // Inisialisasi AOS
-    </script>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-  <!-- pop up pdf -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script>
-    $(document).ready(function () {
-      // Menampilkan modal saat mengklik tautan
-      $("#pdfLink").click(function (e) {
-        e.preventDefault(); // Mencegah default action dari anchor
-        $("#pdfModal").modal("show"); // Menampilkan modal
+    document.getElementById("pdfLink").addEventListener("click", function (e) {
+      e.preventDefault(); // Mencegah aksi default anchor
+      var pdfModal = new bootstrap.Modal(document.getElementById("pdfModal"), {
+        backdrop: false, // Menonaktifkan backdrop
       });
-
-      // Menutup modal saat mengklik ikon X
-      $("#closeIcon").click(function () {
-        $("#pdfModal").modal("hide"); // Menutup modal
-      });
+      pdfModal.show();
     });
+
+    // Menutup modal saat ikon X diklik
+    document.getElementById("closeIcon").addEventListener("click", function () {
+      var pdfModal = bootstrap.Modal.getInstance(
+        document.getElementById("pdfModal")
+      );
+      pdfModal.hide();
+    });
+  </script>
+
+  <!-- Link JS AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(); // Inisialisasi AOS
   </script>
 </html>

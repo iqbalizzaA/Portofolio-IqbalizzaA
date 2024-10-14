@@ -3,9 +3,9 @@ body {
   background-color: #fbf6e2;
 }
 
-.navbar {
+/* .navbar {
   transition: background-color 0.3s ease;
-  z-index: 1030; /* Pastikan navbar berada di atas elemen lain */
+  z-index: 1040;
 }
 
 .scrolled {
@@ -14,8 +14,8 @@ body {
     255,
     255,
     0.774
-  ); /* Ubah warna sesuai kebutuhan */
-}
+  );
+} */
 
 .img-header-cstm {
   height: 95%;
@@ -72,6 +72,7 @@ body {
   padding: 10px;
 }
 
+/* Styling untuk modal */
 .modal-header {
   background-color: #e6532c;
   color: white;
