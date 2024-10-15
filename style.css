@@ -3,6 +3,10 @@ body {
   background-color: #fbf6e2;
 }
 
+.favicon-bundar-cstm {
+  border-radius: 50%;
+}
+
 /* .navbar {
   transition: background-color 0.3s ease;
   z-index: 1040;
