@@ -81,6 +81,7 @@ body {
 .modal-header {
   background-color: #e6532c;
   color: white;
+  z-index: 1040;
 }
 .clickable {
   cursor: pointer; /* Menambahkan cursor pointer pada elemen */
